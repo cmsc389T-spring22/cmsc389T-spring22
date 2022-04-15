@@ -45,7 +45,7 @@ In this part you will be using Docker to dockerize your web app and run it in th
 
 **Important Notes**
 
-- The backend is written in Node.js You should use the "node-10:alpine" image in your dockerfile. This image also comes preconfigured with a "node" user which you can use rather than creating a custom user
+- The backend is written in Node.js You should use the "node:10-alpine" image in your dockerfile. This image also comes preconfigured with a "node" user which you can use rather than creating a custom user
 - The package.json file includes a list of all dependencies. You will need to copy this and run ```npm install``` when building your image.
 - Before you run any commands in your dockerfile (CMD), make sure to ```EXPOSE 8080```. This will expose the port and allow incoming and outgoing traffic flows from your docker container.
 - To run a node app, the bash syntax is ```node app.js```
